@@ -1,5 +1,10 @@
 femas
 
 Halo gus bang bang bang
+<<<<<<< HEAD
 halo surya maulana bb jangan
 anis sis
+=======
+halo surya maulana bb
+anis siswanto
+>>>>>>> Edit-testing
