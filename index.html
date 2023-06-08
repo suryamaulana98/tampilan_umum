@@ -58,6 +58,39 @@
       .pengumuman ul li a {
         text-decoration: none;
       }
+
+  .connector {
+  position: absolute;
+  width: 20px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: 20px; /* Sesuaikan dengan tinggi yang diinginkan */
+  margin-right: 10px; /* Jarak antara simbol bulat dan teks */
+  margin-left: -30px;
+  margin-top: 100px;
+}
+
+.connector::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px; /* Ukuran diameter bulatan */
+  height: 16px; /* Ukuran diameter bulatan */
+  border: 2px solid #0563bb; /* Warna dan ketebalan border */
+  border-radius: 50%; /* Membuat simbol bulat */
+}
+
+.connector::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 8px); /* Jarak garis vertikal dari bulatan */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; /* Lebar garis vertikal */
+  height: 100%; /* Tinggi garis vertikal */
+  background-color: #0563bb; /* Warna garis vertikal */
+}
+
     </style>
 </head>
 
@@ -178,9 +211,9 @@
 
           <marquee id="myMarquee" behavior="scroll" direction="left" class="pengumuman">
               <ul class="horizontal-list" style="margin-top: 18px;">
-                <li><a href="" style="color: black;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
-                <li><a href="" style="color: black;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
-                <li><a href="" style="color: black;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
+                <li><a href="" style="color: #222222;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
+                <li><a href="" style="color: #222222;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
+                <li><a href="" style="color: #222222;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
               </ul>
           </marquee>
 
@@ -229,37 +262,39 @@
     <section id="peraturanMagang" class="services">
       <div class="container">
 
+    <div class="connector"></div> <!-- Garis penghubung dengan simbol bulat -->
         <div class="section-title" data-aos="fade-up" style="margin-bottom: -50px;">
           <h2>Peraturan magang</h2>
         </div>
 
         <main id="main" style="width: 100%;">
 
-   
           <section id="resume" class="resume">
               <div class="" data-aos="fade-up">
                 <div class="row" style="margin-bottom: 50px;">
                   <h2></h2>
+                 
                   <div class="col-lg-12">
-                    <h3 class="resume-title"></h3>
+                    <h3 class="resume-title"></h3>               
                     <div class="resume-item">
-                      <div class="accordion" id="accordionExample">
-                        <div class="accordion-item mb-2">
-                          <h2 class="accordion-header" id="heading1">
-                            <button style="margin: 0;padding: 5px;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" >
-                              <h6 style="font-weight: bold;">PERATURAN BAJU</h4>
-                            </button>
-                          </h2>
-                          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <div class="program-des">
-                                <p>Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi. Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi.Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi. Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="heading1">
+        <button style="margin: 0;padding: 5px;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          <h6 style="font-weight: bold;">PERATURAN BAJU</h6>
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="program-des">
+            <p>Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi. Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi.Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi. Pakaian adalah barang yang digunakan untuk menutupi tubuh dan melindungi dari elemen lingkungan. Pakaian dapat terdiri dari berbagai jenis dan gaya, termasuk pakaian sehari-hari, pakaian formal, pakaian olahraga, pakaian tidur, dan banyak lagi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           
                     <div class="resume-item">
                       <div class="accordion" id="accordionExample">
