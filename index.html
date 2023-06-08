@@ -204,11 +204,20 @@
         display: inline-block;
         margin-right: 100px; /* Untuk memberikan jarak antara elemen */
       }
+      /* Gaya untuk tampilan jam */
+      #clock {
+        position: absolute;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 19px;
+      }
     </style>
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients clients">
+      <div id="clock"></div>
       <div class="container">
-
           <marquee id="myMarquee" behavior="scroll" direction="left" class="pengumuman">
               <ul class="horizontal-list" style="margin-top: 18px;">
                 <li><a href="" style="color: #222222;"><strong style="margin-right: 8px;">02 / 11 / 2022</strong>Pengumuman</a></li>
@@ -218,6 +227,25 @@
           </marquee>
 
         </div>
+        <script>
+      function updateTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Tambahkan angka 0 di depan angka tunggal
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      // Panggil fungsi updateTime setiap detik
+      setInterval(updateTime, 1000);
+    </script>
         <script>
   var myMarquee = document.getElementById('myMarquee');
 

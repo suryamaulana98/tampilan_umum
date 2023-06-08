@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jam Digital</title>
+    <style>
+      /* Gaya untuk tampilan jam */
+      #clock {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <script>
+      function updateTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Tambahkan angka 0 di depan angka tunggal
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      // Panggil fungsi updateTime setiap detik
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
